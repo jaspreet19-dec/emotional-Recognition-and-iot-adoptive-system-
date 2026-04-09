@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion AI Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emotion Recognition System</h1>
+    <h2>Live Camera</h2>
+     <img src="{{ url_for('video_feed') }}" width="500" style="border-radius: 10px;">
+
+    <h2>Real-Time Emotion Detection</h2>
+     <img src="{{ url_for('emotion_video_feed') }}" width="500" style="border-radius: 10px;"> 
+
+    <div class="buttons">
+        <button onclick="detectEmotion()">Face Emotion</button>
+        <button onclick="voiceEmotion()">Voice Emotion</button>
+    </div>
+
+    <div id="result">Waiting for input...</div>
+    <div id="suggestion"></div>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>

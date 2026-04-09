@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #082459, #002159);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+#result {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+#suggestion {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #ffd700;
+}
+
+#chart {
+    background-color: antiquewhite;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
