@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <!-- IMPORTANT: use dashboard.css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Emotion AI</h2>
+
+        <button onclick="detectEmotion()">Face Emotion</button>
+        <button onclick="voiceEmotion()">Voice Emotion</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Live Camera -->
+        <div class="card">
+            <h3>Live Camera</h3>
+            <!-- ✅ FIXED url_for -->
+            <img src="{{ url_for('video_feed') }}">
+        </div>
+
+        <!-- Result -->
+        <div class="card">
+            <h3>Emotion Result</h3>
+            <div id="result">Waiting...</div>
+            <div id="suggestion"></div>
+        </div>
+
+        <!-- Chart -->
+        <div class="card">
+            <h3>Statistics</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

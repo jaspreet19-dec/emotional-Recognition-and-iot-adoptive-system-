@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Emotion Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="overlay"></div>
+
+<!-- Floating particles -->
+<canvas id="particles"></canvas>
+
+<!-- Login Box -->
+<div class="login-box">
+
+    <div class="camera">📷</div>
+
+    <h2>EMOTION DETECTION ACTIVE</h2>
+
+    <div class="emotion">
+        <span>😊 Happy</span>
+        <span>😐 Neutral</span>
+        <span>😌 Calm</span>
+    </div>
+
+    <p class="status">Recognizing Emotion: <b>Calm</b></p>
+
+    <form method="POST">
+        <input type="text" name="username" placeholder="USERNAME" required>
+        <input type="password" name="password" placeholder="PASSWORD" required>
+        <button>LOGIN</button>
+    </form>
+
+    <div class="links">
+        <a href="#">Forgot Password?</a>
+        <a href="/signup">Sign Up</a>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

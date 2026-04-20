@@ -1,0 +1,89 @@
+ body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    height: 100vh;
+    overflow: hidden;
+
+    background: url("bg.jpg") no-repeat center center/cover;
+}
+
+/* Dark overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,20,0.7);
+}
+
+/* Particles canvas */
+#particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login glass card */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 330px;
+    padding: 30px;
+
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 40px rgba(0,255,255,0.6);
+    z-index: 2;
+}
+
+/* Camera */
+.camera {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Emotion row */
+.emotion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+
+    background: linear-gradient(90deg,#00ffc3,#00ff7b);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Links */
+.links a {
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+} 
